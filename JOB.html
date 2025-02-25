@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Darji - Dashboard & Audit Solutions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
+        nav { text-align: center; padding: 1rem; background: #444; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; cursor: pointer; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        .section { background: #fff; padding: 20px; margin: 20px 0; border-radius: 5px; display: none; transition: transform 0.5s ease-in-out; }
+        .active { display: block; transform: translateY(-10px); }
+        footer { text-align: center; padding: 1rem; background: #333; color: #fff; }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Naman Darji</h1>
+        <p>ERP Implementation | Barcode Setup | Inventory Management | Audit | GST | Monthly P&L</p>
+    </header>
+    <nav>
+        <a onclick="showSection('dashboard')">Dashboard</a>
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('services')">Services</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="dashboard" class="section active">
+            <h2>Dashboard</h2>
+            <ul>
+                <li>ERP Software Implementation</li>
+                <li>Barcode Setup</li>
+                <li>Inventory Management (Mart, Garments - Retail & Wholesale)</li>
+                <li>Audit (Stocks, Assets, Finance)</li>
+                <li>GST Compliance</li>
+                <li>Monthly P&L Reports</li>
+            </ul>
+        </section>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I specialize in ERP software implementation, barcode setup, inventory management (Mart, Garments - Retail & Wholesale), audit (Stocks, Assets, Finance), GST compliance, and monthly P&L reporting.</p>
+        </section>
+        <section id="services" class="section">
+            <h2>Services</h2>
+            <ul>
+                <li>ERP Software Implementation</li>
+                <li>Barcode Setup</li>
+                <li>Inventory Management (Mart, Garments - Retail & Wholesale)</li>
+                <li>Audit (Stocks, Assets, Finance)</li>
+                <li>GST Compliance</li>
+                <li>Monthly P&L Reports</li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: namandarji50@gmail.com, namandarjioffice@gmail.com</p>
+            <p>Phone: +91 7340378747</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Naman Darji. All rights reserved.</p>
+    </footer>
+</body>
+</html>
